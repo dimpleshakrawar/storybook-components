@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 12rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-top-right-radius: 0.5rem;
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.menu-items-container {
+  border-right: solid 0.1rem darkGrey;
+}
+
+.menu-item-dark,
+.menu-item-light {
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-item-dark:active {
+  background-color: red;
+}
+
+.menu-item-light:active {
+  background-color: darkGrey;
+}
+
+.menu-item-dark:hover {
+  color: white;
+  background: #222425;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.menu-item-light:hover {
+  font-size: larger;
+  cursor: pointer;
+}

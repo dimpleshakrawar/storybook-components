@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": [
+      "./tsconfig.json",
+      "./tsconfig.node.json",
+      "./vite.config.ts",
+      "./tailwind.config.ts",
+      "./nextuitheme.config.ts",
+      "./postcss.config.js"
+    ]
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "@",
+            "./src/"
+          ]
+        ],
+        "extensions": [
+          ".ts",
+          ".js",
+          ".tsx",
+          ".jsx"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "indent": [
+      "error"
+    ],
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/consistent-type-assertions": "off",
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-props-no-spreading": 0,
+    "endOfLine": "auto"
+  }
+}
